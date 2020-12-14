@@ -98,8 +98,8 @@ driver.find_element_by_xpath(xpath1).click()
 time.sleep(random.uniform(2,4))
 
 #알림설정 나중에하기
-# xpath4 = '/html/body/div[4]/div/div/div/div[3]/button[2]'
-# driver.find_element_by_xpath(xpath4).click()
+xpath4 = '/html/body/div[4]/div/div/div/div[3]/button[2]'
+driver.find_element_by_xpath(xpath4).click()
 
 # time.sleep(random.uniform(1,3))
 
