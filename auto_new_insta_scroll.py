@@ -72,16 +72,16 @@ soup = BeautifulSoup(html, 'html.parser')
 
 time.sleep(random.uniform(1,3))
 
-# email = 'testforcrawl'
-email = 'rookie.sketch'
+# email = '비밀'
+email = '비밀'
 elem_login = driver.find_element_by_name('username')
 elem_login.clear()
 elem_login.send_keys(email)
 
 time.sleep(random.uniform(1,2))
 
-# passwordd = 'sharosharo20'
-passwordd = 'duswn*^^*'
+# passwordd = '비밀'
+passwordd = '비밀'
 elem_login = driver.find_element_by_name('password')
 elem_login.clear()
 elem_login.send_keys(passwordd)
