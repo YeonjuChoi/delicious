@@ -1,0 +1,585 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/Semantic-UI-CSS-master/semantic.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="flickity.css"> 
+        <script src="flickity.pkgd.js"></script>
+        <script src="jquery-3.3.1"></script>
+        <title>💖딜리샤스 팀💖 프로젝트 소개</title>
+        <script src="semantic/dist/semantic.min.js"></script>
+        <meta property='og:image' content='shasha.jpg'>
+        <meta property='og:description' content='샤로수길 카페와 맛집의 생존 공식'>
+        <style>
+            .collapse {
+                visibiliity: collapse;
+            }
+        </style>
+        <style>
+            * {box-sizing: border-box;}
+            .carousel{
+                background: #fafafa;
+            }
+            .carousel-cell {
+                width: 70%;
+                margin-right: 10px;
+            }
+            .carousel img {
+                display: block;
+                height: 540px;
+            }
+            .flickity-page-dots {
+            bottom: -22px;
+            }
+
+            .flickity-page-dots .dot {
+            height: 4px;
+            width: 40px;
+            margin: 0;
+            border-radius: 0;}
+
+            .square {
+                width: 50%;
+                margin-left: 0px;
+
+            }
+            body {
+                font-family: 'Nanum Gothic';
+            }
+            #title {
+                font-family: 'Do Hyeon';
+                font-size: 60;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="ui inverted center aligned segment container">
+            <h4 class="ui inverted grey right aligned header">2020-2 컴퓨팅 기초 기말 프로젝트</h4>
+            <h1 id='title' class="ui inverted header">
+            샤로수길 카페☕와 맛집🍕의 생존 공식
+            </h1><h5 class="ui inverted grey header">!!PC로 보면 더 예쁩니다!!</h5>
+            <h3 class="ui inverted olive right aligned header"><i class='utensils icon'></i>딜리샤스팀</h3>
+        </div>
+
+        <div class='ui segment container'>
+        <div class='ui two columns grid'>
+            <div class='column'>
+                <div class='ui raised segment'>
+                    <a class='ui large red ribbon label'><i class="users icon"></i>팀원 소개</a>
+                        <p>
+                        <div class="ui two column grid">
+                        <div class="column">
+                            <div class="ui fluid card">
+                            <div class="image">
+                                <img src="sugi.jpg">
+                            </div>
+                            <div class="content">
+                                <a class="center aligned header">박윤유</a>
+                                <div class="center aligned meta">
+                                <a>자유전공학부 19학번</a>
+                                <div class='description'>
+                                <p style='margin:10 0 0 0'>역할: 네이버 및 지도 크롤링,<br> 프로젝트 발표</p></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="ui fluid card">
+                            <div class="image">
+                                <img src="yeonju.jpg">
+                            </div>
+                            <div class="content">
+                                <a class="center aligned header">최연주</a>
+                                <div class="center aligned meta">
+                                <a>농경제사회학부 17학번</a>
+                                <div class='description'>
+                                <p style='margin:10 0 0 0'>역할: 인스타그램 크롤링, <br>웹페이지 구축</p></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        </p>
+                    
+                </div>
+            </div>
+            <div class='column'>
+                <div class='ui raised segment'>
+                    <a class='ui large blue ribbon label'><i class="search icon"></i>주제 선정 이유</a>
+                        <p style='margin:20px'>
+                        <b>샤로수길</b>에는 음식점들이 지속적으로 개업과 폐업을 반복하고 있습니다.<br>
+                        유행에 민감한 곳이기에, 인스타그램 태그나 지도 앱 평점, 블로그 리뷰, 네이버 노출 순서 등이 이들 식당의 생존에 영향을 미치는지 궁금해서 이 주제를 선정하게 되었습니다.
+                        </p><br>
+                    <a class='ui large orange ribbon label'><i class="edit icon"></i>활용 데이터</a>
+                        <p style='margin:20'>
+                        <div class="ui list">
+                            <a class="item">
+                                <i class="question circle outline icon"></i>
+                                <div class="content">
+                                <div class="header">식당/카페 찾기</div>
+                                <div class="description">네이버 지도 내 '샤로수길맛집' 검색<br>
+                                2018년 이전에도 해당 식당/카페 있었는지 확인</div><br>
+                                </div>
+                            </a>
+                            <a class="item">
+                                <i class="instagram icon"></i>
+                                <div class="content">
+                                <div class="header">인스타그램</div>
+                                <div class="description">
+                                식당/카페별 인스타그램 포스트 300개씩 해시태그 크롤링<br>
+                                크롤링 후 나온 결과를 워드클라우드로 출력<br>
+                                상위 해시태그 분석</div><br>
+                                </div>
+                            </a>
+                            <a class="item">
+                                <i class="search icon"></i>
+                                <div class="content">
+                                <div class="header">네이버 분석</div>
+                                <div class="description">2년 이상 살아남은 식당 vs 나머지 식당<br>
+                                업종, 평점, 방문자 리뷰 수, 블로그 리뷰 수 분석</div>
+                                </div>
+                            </a>
+                        </div>
+                        </p>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        <br>
+
+        <div class="column">
+        <div class='ui raised segment'>
+            <a class='ui large pink ribbon label'><i class="chart area icon"></i>인스타그램 크롤링 결과</a>
+            <p>
+            <div class="ui segment">
+            <p>샤로수길에서 2년 이상 살아남은 110여개의 식당, 카페, 술집을 대상으로 해당 가게의 이름을 해시태그로 검색한 후,<br> 300개의 게시글을 대상으로 해시태그들을 수집했습니다. <br>
+            그리고 워드클라우드를 통해 시각화를 진행했습니다.</p>
+            </div>
+        <div class="carousel" data-flickity='{ "freeScroll": true, "wrapAround": true, "autoPlay": 2000, "imagesLoaded": true}'>
+            <div class="carousel-cell">
+                <img src="wc\1.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\4.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\5.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\8.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\9.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\10.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\11.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\12.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\13.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\14.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\15.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\16.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\17.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\18.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\19.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\20.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\21.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\22.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\23.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\24.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\26.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\27.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\28.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\29.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\30.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\31.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\32.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\33.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\34.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\36.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\37.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\38.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\39.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\41.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\44.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\45.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\46.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\48.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\49.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\50.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\51.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\52.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\54.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\55.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\57.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\62.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\66.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\67.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\68.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\69.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\71.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\73.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\74.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\75.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\76.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\77.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\78.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\79.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\80.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\81.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\82.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\83.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\84.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\85.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\86.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\87.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\88.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\90.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\91.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\93.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\94.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\95.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\97.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\98.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\99.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\100.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\101.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\102.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\103.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\104.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\105.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\106.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\108.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\109.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\111.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\112.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\113.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\114.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\115.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\116.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\117.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\118.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\119.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\120.png">
+            </div>
+             <div class="carousel-cell">
+                <img src="wc\121.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\122.png">
+            </div>
+            <div class="carousel-cell">
+                <img src="wc\123.png">           
+
+
+
+        </div>
+        </div>
+        </div>
+                
+        <br>
+        <br>
+
+        <div class="column">
+        <div class='ui raised segment'>
+            <a class='ui large green ribbon label'><i class="image outline icon"></i>네이버 크롤링 결과</a>
+            <p>
+            <p>
+            <div class="ui segment">
+            <p>서울대입구의 식당, 카페, 술집 중 2년 이상 살아남은 곳 가운데 113곳, 아직 영업한지 2년이 되지 않은 곳 가운데 81곳에 대한 네이버 지도 데이터를 수집했습니다.<br>
+수집한 정보는 평점, 방문자 리뷰 수, 블로그 리뷰 수, 업종이며, 2년 이상 영업한 장소들과 2년 미만 영업한 장소들 간의 차이를 한눈에 볼 수 있도록 그래프로 시각화했습니다. </p>
+            </div>
+        <div class="carousel" data-flickity='{ "freeScroll": true, "wrapAround": false, "autoPlay": false, "contain": true}'>
+            <div class="carousel-cell square">
+                <img src="naver\1.PNG">
+            </div>
+            <div class="carousel-cell square">
+                <img src="naver\2.PNG">
+            </div>
+            <div class="carousel-cell square">
+                <img src="naver\3.PNG">
+            </div>
+            <div class="carousel-cell square">
+                <img src="naver\4.PNG">
+            </div>
+            <div class="carousel-cell square">
+                <img src="naver\5.PNG">
+            </div>
+            <div class="carousel-cell square">
+                <img src="naver\6.PNG">
+            </div>
+            <div class="carousel-cell square">
+                <img src="naver\7.PNG">
+            </div>
+            <div class="carousel-cell square">
+                <img src="naver\8.PNG">
+            </div>
+            <div class="carousel-cell square">
+                <img src="naver\9.PNG">
+            </div>
+        </div>            
+        </div>
+        </div>
+        <br>
+        <br>
+
+
+        <div class='ui raised segment'>
+            <a class='ui large violet ribbon label'><i class="search icon"></i>결론</a>
+            <p>
+            <div class="ui two columns grid">
+            <div class="column">
+                <div class='ui raised segment'>
+                <a class='ui large pink ribbon label'><i class="instagram icon"></i>인스타그램</a>
+                <p style='margin:10px'>
+                <b>2년 이상 생존한 가게들의 상위 10개 태그의 특징은 다음과 같습니다.</b>
+                <div class='ui bulleted list'>
+                <div class='item'><div class='header'>#<a class='ui red label'>지역</a></div>
+                   예) #샤로수길 #낙성대 #봉천동 #서울대입구 등</div>
+                <div class='item'><div class='header'>#<a class='ui red label'>지역</a><a class='ui yellow label'>업종</a></div>
+                   예) #샤로수길맛집 #샤로수길술집 #샤로수길브런치 #샤로수길이자카야 <br>#샤로수길밥술집 등 </div>
+                <div class='item'><div class='header'>#<a class='ui red label'>지역</a><a class='ui olive label'>메뉴</a></div>
+                   예) #샤로수길스테이크 #샤로수길와인 #샤로수길막걸리 #샤로수길파스타 <br>#샤로수길닭도리탕 등</div>
+                <div class='item'><div class='header'>#<a class='ui olive label'>메뉴</a> 혹은 #<a class='ui olive label'>menu</a></div>
+                예) #마카롱 #macaron #스시 #연어 #오므라이스 #앙버터 #치맥 #와인 #wine #수제버거 #아구찜 #맘모스빵 등</div>
+                <div class='item'><div class='header'>#<a class='ui orange label'>O스타그램</a></div>
+                   예) #맛스타그램 #먹스타그램 #술스타그램 #빵스타그램</div>
+                <div class='item'><div class='header'>일부 식당엔 <a class='ui grey label'>#ad</a>나 <a class='ui grey label'>#협찬</a>이 상위 태그에 오르기도 했습니다</div></div>
+                <div class='item'><div class='header'>카페의 경우 <a class='ui brown label'>#카페투어</a>가, 빵집의 경우엔 <a class='ui teal label'>#빵지순례</a>가 인기 태그였습니다</div></div>
+                <div class='item'><div class='header'>샤로수길 내 다른 식당/술집/카페가 상위 태그에 걸리기도 했습니다.</div></div>
+                <div class='item'><div class='header'><a class='ui pink label'>#데이트</a> <a class='ui pink label'>#샤로수길데이트</a>도 자주 보이는 태그였습니다.</div></div>
+                <div class='item'><div class='header'><a class='ui violet label'>#맞팔</a> <a class='ui violet label'>#소통</a> <a class='ui violet label'>#일상</a> <a class='ui violet label'>#daily</a> <a class='ui violet label'>#선팔하면맞팔</a> <a class='ui violet label'>#좋반</a> 등</div>
+                이건 불용어처리 하지 않았는데, 이걸 통해서 사람들이 유입될 수 있기 때문입니다.</div>
+                </div>
+                <div class='ui list'>
+                    <div class='item'>
+                        <i class='arrow right icon'></i> 
+                        <div class='content'> 
+                        <b>유입률이 높은</b>, 그리고 <b>사람들이 궁금해할만한 태그</b>들이 주로 상위태그에 속해있는 걸 알 수 있었습니다.</div></div>
+                    <div class='item'>
+                        <i class='arrow right icon'></i>
+                        <div class='content'>
+                        그러므로 가게에서 인스타그램 태그 이벤트를 진행할 때, <b>위와 같은 태그들의 조합</b>으로 글을 쓰도록 유도한다면 <b>홍보효과</b>가 있을 것이라 예상할 수 있습니다.</div>
+                    </div>
+                </div>
+                </p>
+                </div>
+                </div>
+            <div class='column'>
+                <div class='ui raised segment'>
+                <a class='ui large green ribbon label'><i class="envelope open outline icon"></i>네이버</a>
+                <p style='margin:15px' 'line-height: 140%'>네이버 지도 사이트에서 <b>평점, 방문자 리뷰 개수, 블로그 리뷰 개수, 업종</b>을 수집하고 분석하여 내린 결론은 다음과 같습니다.
+                <div class='ui bulleted list'>
+                <div class='item' style='line-height: 140%'><div class='header'><h4>평점</h4></div>
+                크롤링을 하기 전 <u>오래 살아남은 가게의 평점이 더 높을 것이라는 가설</u>을 세웠지만, 영업 기간이 2년 이상인 가게와 영업 기간이 2년 미만인 가게의 <b>평점 분포에는 큰 차이가 없었습니다.</b> <br>2년 이상 영업한 가게들의 평점 평균은 4.4, 2년 미만 영업한 가게들의 평점 평균은 4.41로, <b>평균도 유사한 수준</b>이었습니다. <b>긴 영업 기간에는 평점보다 다른 요소가 더 크게 작용하는 것으로 추정</b>됩니다.</div><br>
+                <div class='item' style='line-height: 140%'><div class='header'><h4>방문자 리뷰 및 블로그 리뷰 개수</h4></div>
+                2년 이상 영업한 가게들의 리뷰 수가 더 많을 것이라는 가설을 세웠었고 가설이 맞았습니다. <b>2년 이상 영업한 가게들은 일반적으로 2년 미만 영업한 가게들보다 더 많은 리뷰 개수를 보유하고 있었으며, 2년 이상 영업한 가게들 가운데는 평균 리뷰 수를 한참 뛰어넘는 리뷰 개수를 보유한 가게들이 있었습니다.</b> <br>한 예로 가장 방문자 리뷰 및 블로그 리뷰가 많은 가게는 장블랑제리였고, 각각 6823개/2664개에 달했습니다.<br>
+                단, 리뷰가 많은 가게가 오래 살아남기 유리하다는 결론을 내리기에는 <b>단순히 영업기간이 길어 많은 리뷰가 축적되었을 가능성을 배제할 수 없다</b>는 점에서 한계가 있습니다.</div><br>
+                <div class='item' style='line-height: 140%'><div class='header'><h4>업종</h4></div>
+                2년 이상 영업한 가게 중 <b>가장 많았던 업종은 일식당과 양식당</b>입니다. <br>이 중 양식당은 2년 미만 영업한 가게들 중에서도 가장 많았고 일식당은 2년 미만 영업한 가게들 중에서 3번째로 많은 업종에 그쳤기 때문에, <b>일식당이 오래 영업하기 유리</b>하다고 추측하였습니다. <br>같은 방법으로 추론하여 <b>바(BAR)나 소고기 구이 업종도 오래 살아남는데 유리</b>하다는 결론을 내렸습니다.</div> </p>
+            </div>
+            </div>
+            </div>
+            </div>
+          
+        </div>
+        </div>
+
+
+
+    </div>
+    </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </body>
+</html>
